@@ -1,6 +1,9 @@
 .side-img{
     background-image: url(bg.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
 }
 
 body{
