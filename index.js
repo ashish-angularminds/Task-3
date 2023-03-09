@@ -18,16 +18,21 @@ const radio = document.querySelector('input[name="radio"]:checked');
 const angular = document.getElementById("angular");
 const react = document.getElementById("react");
 const reset = document.getElementById("reset");
-const submit = document.getElementById("submit");
+const submit = document.getElementById("submit1");
 
 reset.addEventListener('click', ()=>{
     location.reload()
 })
 
-submit.addEventListener('mousedown', ()=>{
+
+
+submit.addEventListener('mousedown', (e)=>{
+
+    
+
     if(fullname.value=== ""){
-        alert("Enter Name")
         console.log("Enter Name")
+        alert("Enter Name")
     }
     
     else if(password.value===""){
@@ -46,8 +51,8 @@ submit.addEventListener('mousedown', ()=>{
     }
 
     else if(month.value===""){
-        alert("Enter month")
-        console.log("Enter month")
+        alert("Select month")
+        console.log("Select month")
     }
 
     else if(per.value===""){
@@ -57,22 +62,22 @@ submit.addEventListener('mousedown', ()=>{
 
     else if(uni.value===""){
         alert("Enter University name")
-        console.log("University name")
+        console.log("Enter University name")
     }
 
     else if(time.value===""){
-        alert("Enter time")
-        console.log("Enter time")
+        alert("Select time")
+        console.log("Select time")
     }
     
     else if(week.value===""){
-        alert("Enter week")
-        console.log("Enter week")
+        alert("Select week")
+        console.log("Select week")
     }
 
     else if(date.value===""){
-        alert("Enter date")
-        console.log("Enter date")
+        alert("Enter birth date")
+        console.log("Enter birth date")
     }
 
     else if(email.value===""){
@@ -86,17 +91,20 @@ submit.addEventListener('mousedown', ()=>{
     }
 
     else if(angular.checked != true && react.checked != true){
-        alert("Select either option")
-        console.log("Select either option")
+        alert("Select either option from skills")
+        console.log("Select either option from skills")
     }
 
     else{
-        alert("Successful")
-        console.log("Successful")
+        console.log(`Name:${fullname.value} Password:${password.value} tel:${per.value}
+        url:${url.value} Month:${month.value} number:${number.value} textarea:${uni.value} 
+        time:${time.value} week:${week.value} date:${date.value} email:${email.value} 
+        select:${gender.value} range:${range.value} file:${file.value} 
+        color:${color.value} radio:${radio.value} checkbox1:${angular.checked} 
+        checkbox2:${react.checked}`)
+        event.preventDefault();
+        alert(`Successful ${fullname.value}`)
     }
-})
 
-// submit.addEventListener('mousedown', ()=>{
-//     alert("Successful")
-//     console.log("Successful")
-// })
+    event.preventDefault();
+})
