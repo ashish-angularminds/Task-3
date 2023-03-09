@@ -1,0 +1,16 @@
+.side-img{
+    background-image: url(bg.jpg);
+    background-size: contain;
+}
+
+body{
+    background-color: #5aa9e6;
+}
+
+.col_1{
+    background-color: #7fc8f8;
+}
+
+.all-c{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
