@@ -37,8 +37,6 @@ submit.addEventListener('mousedown', (e)=>{
     
     else if(password.value.length < 8 || !passRegex.test(password.value)){
         alert("Enter valid password")
-
-        
     }
 
     else if(number.value.length !== 10 ||  !numberRegex.test(number.value)){
